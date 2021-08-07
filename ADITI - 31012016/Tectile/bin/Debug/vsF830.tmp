@@ -1,0 +1,908 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Tectile
+</name>
+</assembly>
+<members>
+<member name="P:Tectile.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Tectile.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Tectile.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Tectile.DataSet2.MstDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.Salec1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.SalescDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblBankDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblBrokerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblItOpenDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblITTypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblJourDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblOPENDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPlaceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurchaseDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblSHDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblState1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblUnitDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.templedgDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblAccountDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurchaseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable5DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStockDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblMHDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurTaxDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLedgDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblItemDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.TAX1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.saltaxDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLotrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLotRtDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.saleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.sale1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.saletDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStockSumDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLogoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbal1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbal2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable6DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.OUT1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet2.MstRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.Salec1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.SalescRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblBankRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblBrokerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblItOpenRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblITTypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblJourRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblOPENRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPlaceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurchaseDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblSHRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblState1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblUnitRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.templedgRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblAccountRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurchaseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable5Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStockRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblMHRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurTaxRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLedgRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblItemRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.TAX1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.saltaxRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLotrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLotRtRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.saleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.sale1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.saletRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStockSumRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLogoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbal1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbal2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable6Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.OUT1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet2.MstRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.Salec1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.SalescRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblBankRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblBrokerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblItOpenRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblITTypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblJourRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblOPENRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPlaceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurchaseDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblSHRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStateRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblState1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblUnitRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.templedgRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblAccountRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurchaseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable5RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStockRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblMHRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblPurTaxRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLedgRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblItemRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.TAX1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.saltaxRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLotrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLotRtRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.saleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.sale1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.saletRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblStockSumRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.tblLogoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbal1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.trialbal2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.Treading3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2._P_l3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.DataTable6RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2.OUT1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.MstTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.Salec1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.SalescTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblBankTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblBrokerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblItOpenTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblITTypeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblJourTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblOPENTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblPGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblPlaceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblPurchaseDetailTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblSHTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblStateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblState1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblUnitTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.templedgTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblAccountTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.DataTable1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblPurchaseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.DataTable2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.DataTable3TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.DataTable4TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.DataTable5TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblStockTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblMHTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblPurTaxTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblLedgTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblItemTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.TAX1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.saltaxTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblLotrTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.tblLotRtTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.saleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.sale1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.saletTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Tectile.DataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Tectile.DataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Tectile.DataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Tectile.DataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Tectile.DataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Tectile.DataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Tectile.DataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Tectile.DataSet2TableAdapters.TableAdapterManager.UpdateAll(Tectile.DataSet2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Tectile.DataSet2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Tectile.DataSet1.tblBankDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet1.banktDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet1.AdvDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet1.tblLedgDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet1.tblJourDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Tectile.DataSet1.tblBankRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet1.banktRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet1.AdvRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet1.tblLedgRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet1.tblJourRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Tectile.DataSet1.tblBankRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet1.banktRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet1.AdvRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet1.tblLedgRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet1.tblJourRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Tectile.DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Tectile.DataSet1TableAdapters.tblBankTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet1TableAdapters.banktTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet1TableAdapters.AdvTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet1TableAdapters.tblLedgTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Tectile.DataSet1TableAdapters.tblJourTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Tectile.DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Tectile.DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Tectile.DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Tectile.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Tectile.DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Tectile.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Tectile.DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Tectile.DataSet1TableAdapters.TableAdapterManager.UpdateAll(Tectile.DataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Tectile.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Tectile.DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Tectile.DataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,664 @@
+﻿Imports System.Data.SqlClient
+Public Class frmmanualposting
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Me.Close()
+    End Sub
+
+    Private Sub frmmanualposting_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        companyname1.Text = frmcomdis.CompanyName
+        dateyf1.Text = Format(dateyf, "dd-MM-yyyy")
+        dateyl1.Text = Format(dateyl, "dd-MM-yyyy")
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        If ComboBox1.Text.ToUpper = "SALE" Then
+            SALE()
+        ElseIf ComboBox1.Text.ToUpper = "PURCHASE" Then
+            PURCHASE()
+        ElseIf ComboBox1.Text.ToUpper = "BANK R" Then
+            BANKR()
+        ElseIf ComboBox1.Text.ToUpper = "BANK P" Then
+            BANKP()
+        ElseIf ComboBox1.Text.ToUpper = "JOURNAL" Then
+            JOUR()
+        ElseIf ComboBox1.Text.ToUpper = "PREVIOUS" Then
+            PREV()
+        ElseIf ComboBox1.Text.ToUpper = "OPENING" Then
+            opening()
+        End If
+    End Sub
+    Private Sub opening()
+        Try
+            connect()
+            Dim cmd As New SqlCommand
+            cmd = New SqlCommand("delete from tblLedg where book='OPBAL'", cn)
+            cmd.ExecuteNonQuery()
+            Dim vrno As New ListBox
+            Dim dr As SqlDataReader
+            cmd = New SqlCommand("select * from tblOpen", cn)
+            dr = cmd.ExecuteReader
+            While dr.Read
+                vrno.Items.Add(dr.Item("serialno"))
+            End While
+            dr.Close()
+            Dim i As Integer
+            Dim LEDGVRNO As String
+            Dim LEdGBOOK As String
+            Dim LEDGDATE As New Date
+            Dim LEDGACCODE As String
+            Dim LEDGACNAME As String
+            Dim LEDGDR As Decimal
+            Dim LEDGCR As Decimal
+            Dim LEDGBAL As Decimal
+            Dim LEDGREMARK As String
+            Dim LEDGREF As String
+            Dim LEDGOPNAME As String
+            Dim LEDGOPCODE As String
+
+            For i = 0 To vrno.Items.Count - 1
+                connect()
+                cmd = New SqlCommand("select * from tblOpen where serialno=" & vrno.Items(i), cn)
+                dr = cmd.ExecuteReader
+                While dr.Read
+                    LEDGVRNO = acycode & "/" & vrno.Items(i)
+                    LEdGBOOK = "OPBAL"
+                    MaskedTextBox1.Text = Format(dr.Item("date"), "dd-MM-yyyy")
+                    LEDGACCODE = dr.Item("accode")
+                    LEDGACNAME = dr.Item("acname")
+                    If dr.Item("type") = "CR" Then
+                        LEDGDR = 0
+                        LEDGCR = dr.Item("Amount")
+                    Else
+                        LEDGDR = dr.Item("Amount")
+                        LEDGCR = 0
+                    End If
+                    LEDGBAL = LEDGCR - LEDGDR
+                    LEDGREMARK = dr.Item("Discr")
+                    LEDGREF = "ref"
+                    LEDGOPCODE = 0
+                    LEDGOPNAME = "OPBAL"
+                End While
+                dr.Close()
+                LEDGDATE = MaskedTextBox1.Text
+                Dim a() As String = {LEDGVRNO, LEdGBOOK, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, LEDGACCODE, LEDGACNAME, LEDGDR, LEDGCR, LEDGBAL, LEDGREMARK, LEDGREF, LEDGOPNAME, LEDGOPCODE}
+                myinsert(a, "tblLedg")
+            Next
+            close1()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+    Private Sub SALE()
+        Try
+            Dim LEDGVRNO As String
+            Dim LEdGBOOK As String
+            Dim LEDGDATE As New Date
+            Dim LEDGACCODE As String
+            Dim LEDGACNAME As String
+            Dim LEDGDR As Decimal
+            Dim LEDGCR As Decimal
+            Dim LEDGBAL As Decimal
+            Dim LEDGREMARK As String
+            Dim LEDGREF As String
+            Dim LEDGOPNAME As String
+            Dim LEDGOPCODE As String
+
+            Dim BILLNO As New ListBox
+            Dim VRNO As New ListBox
+            Dim CMD As New SqlCommand
+            Dim DR As SqlDataReader
+            Dim COUNT As Integer = 0
+            connect()
+            CMD = New SqlCommand("delete from tblledg where book='Sales'", cn)
+            CMD.ExecuteNonQuery()
+            CMD = New SqlCommand("delete from tbljour where type='JVSL'", cn)
+            CMD.ExecuteNonQuery()
+            CMD = New SqlCommand("Delete from tblLedg where book='JVSL'", cn)
+            CMD.ExecuteNonQuery()
+
+            CMD = New SqlCommand("sELECT * FROM SALESC", cn)
+            DR = CMD.ExecuteReader
+            While DR.Read
+                BILLNO.Items.Add(DR.Item("OUBNO"))
+                VRNO.Items.Add(DR.Item("VRNO"))
+                COUNT = COUNT + 1
+            End While
+            DR.Close()
+            Dim I As Integer
+            For I = 0 To COUNT - 1
+                connect()
+                Dim jvvrno As String
+                CMD = New SqlCommand("sELECT * FROM SALESC WHERE VRNO='" & VRNO.Items(I) & "'", cn)
+                DR = CMD.ExecuteReader
+                While DR.Read
+                    LEDGVRNO = VRNO.Items(I)
+                    LEdGBOOK = "Sales"
+                    '   MsgBox(Format(DR.Item("billdt"), "dd-MM-yyyy"))
+                    MaskedTextBox1.Text = Format(DR.Item("billdt"), "dd-MM-yyyy")
+                    LEDGACCODE = DR.Item("accodecr")
+                    LEDGACNAME = DR.Item("namecr")
+                    LEDGDR = 0
+                    LEDGCR = DR.Item("gramt")
+                    LEDGBAL = LEDGCR - LEDGDR
+                    LEDGREMARK = DR.Item("remark")
+                    LEDGREF = DR.Item("oubno")
+                    LEDGOPCODE = DR.Item("accode")
+                    LEDGOPNAME = DR.Item("name")
+                    jvvrno = DR.Item("jVVrno")
+                End While
+                DR.Close()
+                LEDGDATE = MaskedTextBox1.Text
+                Dim a() As String = {LEDGVRNO, LEdGBOOK, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, LEDGACCODE, LEDGACNAME, LEDGDR, LEDGCR, LEDGBAL, LEDGREMARK, LEDGREF, LEDGOPNAME, LEDGOPCODE}
+                myinsert(a, "tblLedg")
+                connect()
+                CMD = New SqlCommand("sELECT * FROM SALESC WHERE VRNO='" & VRNO.Items(I) & "'", cn)
+                DR = CMD.ExecuteReader
+                While DR.Read
+                    LEDGVRNO = VRNO.Items(I)
+                    LEdGBOOK = "Sales"
+                    MaskedTextBox1.Text = Format(DR.Item("billdt"), "dd-MM-yyyy")
+                    LEDGACCODE = DR.Item("accode")
+                    LEDGACNAME = DR.Item("name")
+                    LEDGDR = DR.Item("netamt")
+                    LEDGCR = 0
+                    LEDGBAL = LEDGCR - LEDGDR
+                    LEDGREMARK = DR.Item("remark")
+                    LEDGREF = DR.Item("oubno")
+                    LEDGOPCODE = DR.Item("accodecr")
+                    LEDGOPNAME = DR.Item("namecr")
+                End While
+                DR.Close()
+                LEDGDATE = MaskedTextBox1.Text
+                Dim b() As String = {LEDGVRNO, LEdGBOOK, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, LEDGACCODE, LEDGACNAME, LEDGDR, LEDGCR, LEDGBAL, LEDGREMARK, LEDGREF, LEDGOPNAME, LEDGOPCODE}
+                myinsert(b, "tblLedg")
+                connect()
+                Dim tax As New ListBox
+                Dim taxnara As New ListBox
+                Dim changable As New ListBox
+                Dim value As New ListBox
+                Dim poname As New ListBox
+                Dim pocode As New ListBox
+                Dim al As New ListBox
+                Dim onwhich As New ListBox
+                Dim optype As New ListBox
+                Dim amt As New ListBox
+                Dim ispost As New ListBox
+                CMD = New SqlCommand("Select * from saltax where vrno='" & VRNO.Items(I) & "'", cn)
+                DR = CMD.ExecuteReader
+                Dim k As Integer
+                While DR.Read
+                    tax.Items.Add(DR.Item("tax"))
+                    taxnara.Items.Add(DR.Item("taxnara"))
+                    changable.Items.Add(DR.Item("changable"))
+                    value.Items.Add(DR.Item("value"))
+                    poname.Items.Add(DR.Item("poname"))
+                    pocode.Items.Add(DR.Item("pocode"))
+                    al.Items.Add(DR.Item("al"))
+                    amt.Items.Add(DR.Item("amt"))
+                    ispost.Items.Add(DR.Item("ispost"))
+                End While
+                DR.Close()
+                Dim partyamt As Decimal = 0
+                Dim i3 As Integer = 1
+                For k = 0 To al.Items.Count - 1
+                    If taxnara.Items(k).ToString.Trim.ToLower = "gramt" Or taxnara.Items(k).ToString.Trim.ToLower = "netamt" Then
+                    Else
+                        If ispost.Items(k).ToString.ToLower = "t" And Val(amt.Items(k)) <> 0 Then
+                            If al.Items(k).ToString.ToLower.Trim = "less".Trim Then
+                                partyamt = partyamt - Val(amt.Items(k))
+                                Dim a2() As String = {VRNO.Items(I).ToString, "JVSL", LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, pocode.Items(k).ToString, poname.Items(k).ToString, Val(amt.Items(k)), 0, -Val(amt.Items(k)), LEDGREMARK, LEDGREF, LEDGACNAME, LEDGACCODE}
+                                myinsert(a2, "tblLedg")
+                                Dim a3() As String = {jvvrno, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, i3, "DR", poname.Items(k).ToString, pocode.Items(k).ToString, Val(amt.Items(k)), 0, LEDGREF, "JVSL"}
+                                myinsert(a3, "tblJour")
+                            Else
+                                partyamt = partyamt + Val(amt.Items(k))
+                                Dim a2() As String = {VRNO.Items(I).ToString, "JVSL", LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, pocode.Items(k).ToString, poname.Items(k).ToString, 0, Val(amt.Items(k)), Val(amt.Items(k)), LEDGREMARK, LEDGREF, LEDGACNAME, LEDGACCODE}
+                                myinsert(a2, "tblLedg")
+                                Dim a3() As String = {jvvrno, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, i3, "CR", poname.Items(k).ToString, pocode.Items(k).ToString, 0, Val(amt.Items(k)), LEDGREF, "JVSL"}
+                                myinsert(a3, "tblJour")
+                            End If
+                            i3 = i3 + 1
+                        Else
+
+                        End If
+                    End If
+                Next
+                Dim a4() As String = {jvvrno, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, i3, "DR", LEDGACNAME, LEDGACCODE, partyamt, 0, LEDGREF, "JVSL"}
+                myinsert(a4, "tblJour")
+            Next
+            close1()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+    Private Sub PURCHASE()
+        Try
+            Dim LEDGVRNO As String
+            Dim LEdGBOOK As String
+            Dim LEDGDATE As New Date
+            Dim LEDGACCODE As String
+            Dim LEDGACNAME As String
+            Dim LEDGDR As Decimal
+            Dim LEDGCR As Decimal
+            Dim LEDGBAL As Decimal
+            Dim LEDGREMARK As String
+            Dim LEDGREF As String
+            Dim LEDGOPNAME As String
+            Dim LEDGOPCODE As String
+
+            Dim BILLNO As New ListBox
+            Dim VRNO As New ListBox
+            Dim CMD As New SqlCommand
+            Dim DR As SqlDataReader
+            Dim COUNT As Integer = 0
+            connect()
+            CMD = New SqlCommand("delete from tblledg where book='Purchase'", cn)
+            CMD.ExecuteNonQuery()
+            CMD = New SqlCommand("delete from tbljour where type='JVPU'", cn)
+            CMD.ExecuteNonQuery()
+            CMD = New SqlCommand("Delete from tblLedg where book='JVPU'", cn)
+            CMD.ExecuteNonQuery()
+
+            CMD = New SqlCommand("sELECT * FROM tblPurchase", cn)
+            DR = CMD.ExecuteReader
+            While DR.Read
+                BILLNO.Items.Add(DR.Item("OUBNO"))
+                VRNO.Items.Add(DR.Item("VRNO"))
+                COUNT = COUNT + 1
+            End While
+            DR.Close()
+            Dim I As Integer
+            For I = 0 To COUNT - 1
+                connect()
+                Dim jvvrno As String
+                CMD = New SqlCommand("sELECT * FROM tblPurchase WHERE VRNO='" & VRNO.Items(I) & "'", cn)
+                DR = CMD.ExecuteReader
+                While DR.Read
+                    LEDGVRNO = VRNO.Items(I)
+                    LEdGBOOK = "Purchase"
+                    '   MsgBox(Format(DR.Item("billdt"), "dd-MM-yyyy"))
+                    MaskedTextBox1.Text = Format(DR.Item("billdt"), "dd-MM-yyyy")
+                    LEDGACCODE = DR.Item("accode")
+                    LEDGACNAME = DR.Item("name")
+                    LEDGDR = DR.Item("gramt")
+                    LEDGCR = 0
+                    LEDGBAL = LEDGCR - LEDGDR
+                    LEDGREMARK = DR.Item("remark")
+                    LEDGREF = DR.Item("oubno")
+                    LEDGOPCODE = DR.Item("accodecr")
+                    LEDGOPNAME = DR.Item("namecr")
+                    jvvrno = DR.Item("jVVrno")
+                End While
+                DR.Close()
+                LEDGDATE = MaskedTextBox1.Text
+                Dim a() As String = {LEDGVRNO, LEdGBOOK, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, LEDGACCODE, LEDGACNAME, LEDGDR, LEDGCR, LEDGBAL, LEDGREMARK, LEDGREF, LEDGOPNAME, LEDGOPCODE}
+                myinsert(a, "tblLedg")
+                connect()
+                CMD = New SqlCommand("sELECT * FROM tblPurchase WHERE VRNO='" & VRNO.Items(I) & "'", cn)
+                DR = CMD.ExecuteReader
+                While DR.Read
+                    LEDGVRNO = VRNO.Items(I)
+                    LEdGBOOK = "Purchase"
+                    MaskedTextBox1.Text = Format(DR.Item("billdt"), "dd-MM-yyyy")
+                    LEDGACCODE = DR.Item("accodecr")
+                    LEDGACNAME = DR.Item("namecr")
+                    LEDGDR = 0
+                    LEDGCR = DR.Item("netamt")
+                    LEDGBAL = LEDGCR - LEDGDR
+                    LEDGREMARK = DR.Item("remark")
+                    LEDGREF = DR.Item("oubno")
+                    LEDGOPCODE = DR.Item("accode")
+                    LEDGOPNAME = DR.Item("name")
+                End While
+                DR.Close()
+                LEDGDATE = MaskedTextBox1.Text
+                Dim b() As String = {LEDGVRNO, LEdGBOOK, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, LEDGACCODE, LEDGACNAME, LEDGDR, LEDGCR, LEDGBAL, LEDGREMARK, LEDGREF, LEDGOPNAME, LEDGOPCODE}
+                myinsert(b, "tblLedg")
+                connect()
+                Dim tax As New ListBox
+                Dim taxnara As New ListBox
+                Dim changable As New ListBox
+                Dim value As New ListBox
+                Dim poname As New ListBox
+                Dim pocode As New ListBox
+                Dim al As New ListBox
+                Dim onwhich As New ListBox
+                Dim optype As New ListBox
+                Dim amt As New ListBox
+                Dim ispost As New ListBox
+                CMD = New SqlCommand("Select * from tblPurtax where vrno='" & VRNO.Items(I) & "'", cn)
+                DR = CMD.ExecuteReader
+                Dim k As Integer
+                While DR.Read
+                    tax.Items.Add(DR.Item("tax"))
+                    taxnara.Items.Add(DR.Item("taxnara"))
+                    changable.Items.Add(DR.Item("changable"))
+                    value.Items.Add(DR.Item("value"))
+                    poname.Items.Add(DR.Item("poname"))
+                    pocode.Items.Add(DR.Item("pocode"))
+                    al.Items.Add(DR.Item("al"))
+                    amt.Items.Add(DR.Item("amt"))
+                    ispost.Items.Add(DR.Item("ispost"))
+                End While
+                DR.Close()
+                Dim partyamt As Decimal = 0
+                Dim i3 As Integer = 1
+                For k = 0 To al.Items.Count - 1
+                    If taxnara.Items(k).ToString.Trim.ToLower = "gramt" Or taxnara.Items(k).ToString.Trim.ToLower = "netamt" Then
+                    Else
+                        If ispost.Items(k).ToString.ToLower = "t" And Val(amt.Items(k)) <> 0 Then
+                            '        Label2.Text = al.Items(k).ToString.ToLower()
+                            If al.Items(k).ToString.ToLower.Trim = "add".ToLower Then
+                                partyamt = partyamt + Val(amt.Items(k))
+                                Dim a2() As String = {VRNO.Items(I).ToString, "JVPU", LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, pocode.Items(k).ToString, poname.Items(k).ToString, Val(amt.Items(k)), 0, -Val(amt.Items(k)), LEDGREMARK, LEDGREF, LEDGACNAME, LEDGACCODE}
+                                myinsert(a2, "tblLedg")
+                                Dim a3() As String = {jvvrno, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, i3, "DR", poname.Items(k).ToString, pocode.Items(k).ToString, Val(amt.Items(k)), 0, LEDGREF, "JVPU"}
+                                myinsert(a3, "tblJour")
+                            Else
+                                '   MsgBox("het")
+                                partyamt = partyamt - Val(amt.Items(k))
+                                Dim a2() As String = {VRNO.Items(I).ToString, "JVPU", LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, pocode.Items(k).ToString, poname.Items(k).ToString, 0, Val(amt.Items(k)), Val(amt.Items(k)), LEDGREMARK, LEDGREF, LEDGACNAME, LEDGACCODE}
+                                myinsert(a2, "tblLedg")
+                                Dim a3() As String = {jvvrno, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, i3, "CR", poname.Items(k).ToString, pocode.Items(k).ToString, 0, Val(amt.Items(k)), LEDGREF, "JVPU"}
+                                myinsert(a3, "tblJour")
+                            End If
+                            i3 = i3 + 1
+                        Else
+
+                        End If
+                    End If
+                Next
+                Dim a4() As String = {jvvrno, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, i3, "CR", LEDGACNAME, LEDGACCODE, 0, partyamt, LEDGREF, "JVPU"}
+                myinsert(a4, "tblJour")
+            Next
+            close1()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+    End Sub
+    Private Sub maxVrNo(ByRef tb As TextBox, ByVal ds As String)
+        Try
+            Dim cmd As New SqlCommand
+            Dim dr As SqlDataReader
+            connect()
+            cmd = New SqlCommand("Select VrNo from " & ds, cn)
+            dr = cmd.ExecuteReader
+            Dim maxVrNo As Integer
+            maxVrNo = 0
+            While dr.Read
+                If maxVrNo < dr.Item("VrNo").ToString.Substring(3) Then
+                    maxVrNo = dr.Item("VrNo").ToString.Substring(3)
+                End If
+            End While
+            dr.Close()
+            tb.Text = acycode & "/" & Val(maxVrNo) + 1
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub BANKR()
+        Try
+            Dim cmd As New SqlCommand
+            Dim dr As SqlDataReader
+            Dim acname As New ListBox
+            Dim amount As New ListBox
+            Dim accode As New ListBox
+            Dim sql As String
+            sql = "Select sum(amount)-isnull(sum(paidamt),0) as bal,namecr,Accodecr from Bankt right join tblbank on bankt.vrno=tblBank.vrno group by namecr,accodecr"
+            connect()
+            cmd = New SqlCommand("Update adv set isclear='t'", cn)
+            cmd.ExecuteNonQuery()
+            cmd = New SqlCommand(sql, cn)
+            dr = cmd.ExecuteReader
+            While dr.Read
+                amount.Items.Add(dr.Item("bal"))
+                acname.Items.Add(dr.Item("namecr"))
+                accode.Items.Add(dr.Item("accodecr"))
+            End While
+            dr.Close()
+            Dim i As Integer
+            For i = 0 To acname.Items.Count - 1
+                connect()
+                cmd = New SqlCommand("Select vrno from adv where acname='" & acname.Items(i).ToString & "'", cn)
+                dr = cmd.ExecuteReader
+                If dr.HasRows = False Then
+                    dr.Close()
+                    Dim tb As New TextBox
+                    Dim dat As New Date
+                    maxVrNo(tb, "adv")
+                    dat = Date.Today
+                    Dim a() As String = {tb.Text, dat.Month & "-" & dat.Day & "-" & dat.Year, acname.Items(i).ToString, accode.Items(i).ToString, "REFBANKVR", amount.Items(i).ToString, "Oub No", "New Update", "New", 0, "f"}
+                    myinsert(a, "adv")
+                Else
+                    dr.Close()
+                    cmd = New SqlCommand("Update adv set amount=" & amount.Items(i).ToString & ",isclear='f' where serialno in (Select max(serialno) from adv where acname='" & acname.Items(i).ToString & "' group by acname) ", cn)
+                    cmd.ExecuteNonQuery()
+                End If
+                close1()
+            Next
+            updatebillr()
+            close1()
+            MsgBox("Success")
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+    Private Sub BANKP()
+        Try
+            Dim cmd As New SqlCommand
+            Dim dr As SqlDataReader
+            Dim acname As New ListBox
+            Dim amount As New ListBox
+            Dim accode As New ListBox
+            Dim sql As String
+            sql = "Select sum(amount)-isnull(sum(paidamt),0) as bal,name,Accode from Bankt right join tblbank on bankt.vrno=tblBank.vrno group by name,accode"
+            connect()
+            cmd = New SqlCommand(sql, cn)
+            dr = cmd.ExecuteReader
+            While dr.Read
+                amount.Items.Add(dr.Item("bal"))
+                acname.Items.Add(dr.Item("name"))
+                accode.Items.Add(dr.Item("accode"))
+            End While
+            dr.Close()
+            Dim i As Integer
+            For i = 0 To acname.Items.Count - 1
+                connect()
+                cmd = New SqlCommand("Select vrno from advpmt where acname='" & acname.Items(i).ToString & "'", cn)
+                dr = cmd.ExecuteReader
+                If dr.HasRows = False Then
+                    dr.Close()
+                    Dim tb As New TextBox
+                    Dim dat As New Date
+                    maxVrNo(tb, "advpmt")
+                    dat = Date.Today
+                    Dim a() As String = {tb.Text, dat.Month & "-" & dat.Day & "-" & dat.Year, acname.Items(i).ToString, accode.Items(i).ToString, "REFBANKVR", amount.Items(i).ToString, "Oub No", "New Update", "New", 0, "F"}
+                    myinsert(a, "advpmt")
+                Else
+                    dr.Close()
+                    cmd = New SqlCommand("Update adv set amount=" & amount.Items(i).ToString & " where serialno in (Select max(serialno) from adv where acname='" & acname.Items(i).ToString & "'" & " group by acname) ", cn)
+                    cmd.ExecuteNonQuery()
+                End If
+                close1()
+            Next
+
+
+            close1()
+            MsgBox("Success")
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+    Private Sub updatebillr()
+        Try
+            connect()
+            Dim cmd As New SqlCommand
+            Dim dr As SqlDataReader
+            cmd = New SqlCommand("update salesc set outamt=netamt", cn)
+            cmd.ExecuteNonQuery()
+            cmd = New SqlCommand("Update tblOub set outamt=netamt where book='Sales'", cn)
+            cmd.ExecuteNonQuery()
+            Dim sql As String
+            sql = "update salesc set outamt=Salesc.outamt-(Select sum(paidamt) from bankt where bankt.oubno=salesc.oubno and bankt.bkname=salesc.bkname group by bankt.oubno,bankt.bkname) from salesc,bankt where salesc.oubno=bankt.oubno and salesc.bkname=bankt.bkname"
+            cmd = New SqlCommand(sql, cn)
+            cmd.ExecuteNonQuery()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+    Private Sub JOUR()
+        Try
+            connect()
+            Dim LEDGVRNO As String
+            Dim LEdGBOOK As String
+            Dim LEDGDATE As New Date
+            Dim LEDGACCODE As String
+            Dim LEDGACNAME As String
+            Dim LEDGDR As Decimal
+            Dim LEDGCR As Decimal
+            Dim LEDGBAL As Decimal
+            Dim LEDGREMARK As String
+            Dim LEDGREF As String
+            Dim LEDGOPNAME As String
+            Dim LEDGOPCODE As String
+            Dim cmd As New SqlCommand
+            Dim dr As SqlDataReader
+            Dim vrno As New ListBox
+            Dim serialno As New ListBox
+            cmd = New SqlCommand("Select serialno from tblJour", cn)
+            dr = cmd.ExecuteReader
+            While dr.Read
+                serialno.Items.Add(dr.Item(0))
+            End While
+            dr.Close()
+            Dim i As Integer
+            For i = 0 To serialno.Items.Count - 1
+                connect()
+                cmd = New SqlCommand("Select * from tblJour where serialno=" & serialno.Items(i), cn)
+                dr = cmd.ExecuteReader
+                While dr.Read
+
+                End While
+                dr.Close()
+                close1()
+            Next
+            close1()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+    Private Sub PREV()
+        Try
+            Dim LEDGVRNO As String
+            Dim LEdGBOOK As String
+            Dim LEDGDATE As New Date
+            Dim LEDGACCODE As String
+            Dim LEDGACNAME As String
+            Dim LEDGDR As Decimal
+            Dim LEDGCR As Decimal
+            Dim LEDGBAL As Decimal
+            Dim LEDGREMARK As String
+            Dim LEDGREF As String
+            Dim LEDGOPNAME As String
+            Dim LEDGOPCODE As String
+
+            Dim BILLNO As New ListBox
+            Dim VRNO As New ListBox
+            Dim CMD As New SqlCommand
+            Dim DR As SqlDataReader
+            Dim COUNT As Integer = 0
+            connect()
+            CMD = New SqlCommand("delete from tblledg where book='PREPurchase' or book='PRESales'", cn)
+            CMD.ExecuteNonQuery()
+            CMD = New SqlCommand("sELECT * FROM tblOub", cn)
+            DR = CMD.ExecuteReader
+            While DR.Read
+                BILLNO.Items.Add(DR.Item("OUBNO"))
+                VRNO.Items.Add(DR.Item("VRNO"))
+                COUNT = COUNT + 1
+            End While
+            DR.Close()
+            Dim I As Integer
+            For I = 0 To COUNT - 1
+                connect()
+                Dim jvvrno As String
+                CMD = New SqlCommand("sELECT * FROM tblOub WHERE VRNO='" & VRNO.Items(I) & "'", cn)
+                DR = CMD.ExecuteReader
+                While DR.Read
+                    LEDGVRNO = VRNO.Items(I)
+                    If DR.Item("book") = "Purchase" Then
+                        LEdGBOOK = "PREPurchase"
+                        MaskedTextBox1.Text = Format(DR.Item("date"), "dd-MM-yyyy")
+                        LEDGACCODE = DR.Item("accode")
+                        LEDGACNAME = DR.Item("acname")
+                        LEDGDR = 0
+                        LEDGCR = DR.Item("Netamt")
+                        LEDGBAL = LEDGCR - LEDGDR
+                        LEDGREMARK = "PREV"
+                        LEDGREF = DR.Item("oubno")
+                        LEDGOPCODE = DR.Item("bkcode")
+                        LEDGOPNAME = DR.Item("bkname")
+                    Else
+                        LEdGBOOK = "PRESales"
+                        MaskedTextBox1.Text = Format(DR.Item("date"), "dd-MM-yyyy")
+                        LEDGACCODE = DR.Item("bkcode")
+                        LEDGACNAME = DR.Item("bkname")
+                        LEDGDR = 0
+                        LEDGCR = DR.Item("Netamt")
+                        LEDGBAL = LEDGCR - LEDGDR
+                        LEDGREMARK = "PREV"
+                        LEDGREF = DR.Item("oubno")
+                        LEDGOPCODE = DR.Item("accode")
+                        LEDGOPNAME = DR.Item("acname")
+                    End If
+                    '   MsgBox(Format(DR.Item("billdt"), "dd-MM-yyyy"))
+                End While
+                DR.Close()
+                LEDGDATE = MaskedTextBox1.Text
+                Dim a() As String = {LEDGVRNO, LEdGBOOK, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, LEDGACCODE, LEDGACNAME, LEDGDR, LEDGCR, LEDGBAL, LEDGREMARK, LEDGREF, LEDGOPNAME, LEDGOPCODE}
+                myinsert(a, "tblLedg")
+                connect()
+                CMD = New SqlCommand("sELECT * FROM tblOub WHERE VRNO='" & VRNO.Items(I) & "'", cn)
+                DR = CMD.ExecuteReader
+                While DR.Read
+                    LEDGVRNO = VRNO.Items(I)
+                    If DR.Item("Book") = "Purchase" Then
+                        LEdGBOOK = "PREPurchase"
+                        MaskedTextBox1.Text = Format(DR.Item("date"), "dd-MM-yyyy")
+                        LEDGACCODE = DR.Item("bkcode")
+                        LEDGACNAME = DR.Item("bkname")
+                        LEDGDR = DR.Item("netamt")
+                        LEDGCR = 0
+                        LEDGBAL = LEDGCR - LEDGDR
+                        LEDGREMARK = "PREV"
+                        LEDGREF = DR.Item("oubno")
+                        LEDGOPCODE = DR.Item("accode")
+                        LEDGOPNAME = DR.Item("acname")
+                    Else
+                        LEdGBOOK = "PRESales"
+                        MaskedTextBox1.Text = Format(DR.Item("date"), "dd-MM-yyyy")
+                        LEDGACCODE = DR.Item("accode")
+                        LEDGACNAME = DR.Item("acname")
+                        LEDGDR = DR.Item("netamt")
+                        LEDGCR = 0
+                        LEDGBAL = LEDGCR - LEDGDR
+                        LEDGREMARK = "PREV"
+                        LEDGREF = DR.Item("oubno")
+                        LEDGOPCODE = DR.Item("bkcode")
+                        LEDGOPNAME = DR.Item("bkname")
+                    End If
+                End While
+                DR.Close()
+                LEDGDATE = MaskedTextBox1.Text
+                Dim b() As String = {LEDGVRNO, LEdGBOOK, LEDGDATE.Month & "-" & LEDGDATE.Day & "-" & LEDGDATE.Year, LEDGACCODE, LEDGACNAME, LEDGDR, LEDGCR, LEDGBAL, LEDGREMARK, LEDGREF, LEDGOPNAME, LEDGOPCODE}
+                myinsert(b, "tblLedg")
+            Next
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+    End Sub
+End Class
