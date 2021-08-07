@@ -1,0 +1,194 @@
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.exe
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.xml
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.pdb
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\bin\Debug\TutionApplication.pdb
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\bin\Debug\TutionApplication.xml
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmLogin.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Form2.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmBirthDayNotification.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmbShow.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit2.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFee.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFeeSearch.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmMainScreen.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentEdit.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentsDetail.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmRegistration.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptClass.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptContact.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFee.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFname.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptgender3.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptNormalData.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptRollNo.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptSurName.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSearch.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Resources.resources
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.vbproj.GenerateResource.Cache
+C:\Users\HET\Desktop\TutionApplication\TutionApplication\obj\Debug\TutionApplication.temp.resources
+E:\My VB WORK\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe
+E:\My VB WORK\TutionApplication\TutionApplication\bin\Debug\TutionApplication.pdb
+E:\My VB WORK\TutionApplication\TutionApplication\bin\Debug\TutionApplication.xml
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\ResolveAssemblyReference.cache
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmLogin.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Form2.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmBirthDayNotification.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmbShow.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmChangeSem.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit2.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFee.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFeeSearch.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmMainScreen.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentEdit.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentsDetail.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmRegistration.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptClass.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptContact.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFee.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFeeRasid.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFname.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptgender3.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptNormalData.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptRollNo.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptSurName.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSchoolMaster.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSearch.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Resources.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.temp.resources
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.vbproj.GenerateResource.Cache
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.exe
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.xml
+E:\My VB WORK\TutionApplication\TutionApplication\obj\Debug\TutionApplication.pdb
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.exe
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.xml
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.pdb
+C:\TutionApplication\TutionApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmLogin.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Form2.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmBirthDayNotification.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmbShow.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmChangeSem.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit2.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFee.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFeeSearch.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmMainScreen.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentEdit.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentsDetail.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmRegistration.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptNormalReport.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSchoolMaster.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSearch.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Resources.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.temp.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.vbproj.GenerateResource.Cache
+C:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe
+C:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.pdb
+C:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.xml
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptGender.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptContact.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFee.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmtemp.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptClass.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFirstName.resources
+C:\TutionApplication\TutionApplication\bin\Debug\Wildgrape.Aqua.Controls.dll
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptSurname.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptReceipt.resources
+C:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe.config
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.SplashScreen1.resources
+C:\ITSoftware\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe.config
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.exe
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.xml
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.pdb
+C:\ITSoftware\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe
+C:\ITSoftware\TutionApplication\TutionApplication\bin\Debug\TutionApplication.pdb
+C:\ITSoftware\TutionApplication\TutionApplication\bin\Debug\TutionApplication.xml
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptReceipt.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptSurname.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.SplashScreen1.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmLogin.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Form2.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmBirthDayNotification.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmbShow.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmChangeSem.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit2.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFee.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFeeSearch.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmMainScreen.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentEdit.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentsDetail.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmRegistration.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptClass.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptContact.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFee.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFirstName.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptGender.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptNormalReport.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSchoolMaster.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSearch.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmtemp.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Resources.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.temp.resources
+C:\ITSoftware\TutionApplication\TutionApplication\obj\Debug\TutionApplication.vbproj.GenerateResource.Cache
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptDecFname.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptDecSurname.resources
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmALLreceipt.resources
+C:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe.manifest
+C:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.application
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.exe.manifest
+C:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.application
+F:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe.config
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.exe
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.xml
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.pdb
+F:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe.manifest
+F:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.application
+F:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe
+F:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.pdb
+F:\TutionApplication\TutionApplication\bin\Debug\TutionApplication.xml
+F:\TutionApplication\TutionApplication\obj\Debug\ResolveAssemblyReference.cache
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmALLreceipt.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptDecFname.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptDecSurname.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptReceipt.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptSurname.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.SplashScreen1.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmLogin.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Form2.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmBirthDayNotification.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmbShow.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmChangeSem.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmEdit2.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFee.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmFeeSearch.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmMainScreen.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentEdit.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmParentsDetail.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmRegistration.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptClass.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptContact.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFee.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptFirstName.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptGender.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmrptNormalReport.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSchoolMaster.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmSearch.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmtemp.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.Resources.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.temp.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.vbproj.GenerateResource.Cache
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.exe.manifest
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.application
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmorderedreports.resources
+F:\TutionApplication\TutionApplication\obj\Debug\TutionApplication.frmdisplay.resources
+F:\Backup from old laptop\Backup_New\TutionApplication\TutionApplication\bin\Debug\TutionApplication.exe.config
+F:\Backup from old laptop\Backup_New\TutionApplication\TutionApplication\obj\Debug\TutionApplication.exe
+F:\Backup from old laptop\Backup_New\TutionApplication\TutionApplication\obj\Debug\TutionApplication.xml
+F:\Backup from old laptop\Backup_New\TutionApplication\TutionApplication\obj\Debug\TutionApplication.pdb
