@@ -1,0 +1,45 @@
+1. For network increment on save.
+2.Outstanding Report - Monthly and peridoic
+3.Pending Grey and Pending Amount
+4.From Lotno to Lotno - Selection
+  From BillNo to Billno-Selection
+5.Average Rate
+6.Check opening balance - Bill edit then change opening balance - Date should not be in current year - Combo in DR and CR
+DR first
+7.Transfer old balance in new Company
+8.Party wise Discount,RD,CLAIM,TDS. Sales and Purchse
+9.Round Check
+10.Opening balance in account view
+11.vat report- download miracle
+12.Transfer problem same oubno
+
+
+transfer
+
+1. Lot Upto Date
+    lotr - sale1 
+    lotrt-salet
+    pending - lotr and lotrt take in new database(new company)
+    
+
+2. Balance Sheet Schedule all party balance <> 0 
+
+
+REC
+
+01/04          dr          cr 
+01-04   100
+02-04 0            200 
+0-04    100
+31-04  100
+3104             200
+
+02-05
+02-05
+
+chq depo   200
+           100
+
+
+
+

@@ -1,0 +1,77 @@
+Important Queries
+1. To check if entry is made in lotr but entry not in lotrt.
+select * from tblLotr where Vrno not in (Select distinct vrno from tblLotrt)
+2.To check if gpcs and total entrry in lotrt is same or not.
+select tblLotr.vrno from tblLotr group by tblLotr.vrno having (sum(gpcs)<>(select count(*) from tblLotrt where tbllotr.vrno=tbllotrt.vrno))
+3.To check if gmtr is proper or not in lotr and lotrt.
+select tblLotr.vrno from tblLotr group by tblLotr.vrno having (sum(tbllotr.gmtr)<>(select sum(tbllotrt.gmtr) from tblLotrt where tbllotr.vrno=tbllotrt.vrno group by tblLotrt.vrno))
+************************************************************OR***********************************************************
+
+select s.billno,s.amt ,s1.amt from saltax s,saltax s1 where s1.taxnara like '%C%' and s.taxnara like '%C%' and s1.billno=s.billno
+
+
+select *
+from
+(select vrno, SUM(gmtr) as col1
+from tblLotrt
+group by tblLotrt.vrno) t1 INNER JOIN
+(select vrno, gmtr as col2
+from tblLotr) t2 ON t1.vrno = t2.vrno where t1.col1 <> t2.col2
+4.To check total pcs in sale and sale1 is same or not.
+select *
+from
+(select vrno, sum(grpcs) as col1
+from sale1
+group by sale1.vrno) t1 INNER JOIN
+(select vrno, grpcs as col2
+from sale) t2 ON t1.vrno = t2.vrno where t1.col1 <> t2.col2
+5.To check total gmtr in sale and sale1 is same or not.
+select *
+from
+(select vrno, sum(grmtr) as col1
+from sale1
+group by sale1.vrno) t1 INNER JOIN
+(select vrno, grqty as col2
+from sale) t2 ON t1.vrno = t2.vrno where t1.col1 <> t2.col2
+6.To check total gmtr in salet and sale1
+select *
+from
+(select vrno, SR,sum(grmtr) as col1
+from salet
+group by salet.vrno,salet.sr) t1 INNER JOIN
+(select vrno,srno,grmtr as col2
+from sale1) t2 ON t1.vrno = t2.vrno and t1.sr=t2.srno where t1.col1 <> t2.col2
+7.To check total gpcs in salet and sale1
+select *
+from
+(select vrno, SR,count(*) as col1
+from salet
+group by salet.vrno,salet.sr) t1 INNER JOIN
+(select vrno,srno,grpcs as col2
+from sale1) t2 ON t1.vrno = t2.vrno and t1.sr=t2.srno where t1.col1 <> t2.col2
+8.To check finish mtr is same in salet and sale1 or not.
+select *
+from
+(select vrno, SR,sum(qty) as col1
+from salet
+group by salet.vrno,salet.sr) t1 INNER JOIN
+(select vrno,srno,qty as col2
+from sale1) t2 ON t1.vrno = t2.vrno and t1.sr=t2.srno where t1.col1 <> t2.col2
+9.To check finish mtr in sale and salet or not.
+select *
+from
+(select vrno,sum(qty) as col1
+from sale1
+group by sale1.vrno) t1 INNER JOIN
+(select vrno,qty as col2
+from sale) t2 ON t1.vrno = t2.vrno where t1.col1 <> t2.col2
+10.To check if gbaltr is inline with sale1 or not
+select *
+from
+(select lotno,gmtr-gbalmtr as col1
+from tblLotr) t1 INNER JOIN
+(select lotno,sum(grmtr) as col2
+from sale1 group by lotno) t2 ON t1.lotno = t2.lotno where t1.col1 <> t2.col2
+
+
+

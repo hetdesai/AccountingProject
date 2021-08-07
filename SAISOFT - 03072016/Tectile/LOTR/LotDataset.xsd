@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LotDataset" targetNamespace="http://tempuri.org/LotDataset.xsd" xmlns:mstns="http://tempuri.org/LotDataset.xsd" xmlns="http://tempuri.org/LotDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="_1NewDbConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_1NewDbConnectionString2 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Tectile.My.MySettings.GlobalReference.Default._1NewDbConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="INOUTTableAdapter" GeneratorDataComponentClassName="INOUTTableAdapter" Name="INOUT" UserDataComponentName="INOUTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_1NewDbConnectionString2 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tblLotr.Date, tblLotr.LotNo, tblLotr.IchNo, tblLotr.ACName, tblLotr.Gpcs, tblLotr.Gmtr, sale1.BillDt, sale1.BillNo, sale1.ITName, sale1.process, sale1.shade, sale1.Style, sale1.Grpcs, sale1.GrMtr
+FROM            tblLotr INNER JOIN
+                         sale1 ON tblLotr.LotNo = sale1.lotno</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="LotNo" DataSetColumn="LotNo" />
+              <Mapping SourceColumn="IchNo" DataSetColumn="IchNo" />
+              <Mapping SourceColumn="ACName" DataSetColumn="ACName" />
+              <Mapping SourceColumn="Gpcs" DataSetColumn="Gpcs" />
+              <Mapping SourceColumn="Gmtr" DataSetColumn="Gmtr" />
+              <Mapping SourceColumn="BillDt" DataSetColumn="BillDt" />
+              <Mapping SourceColumn="BillNo" DataSetColumn="BillNo" />
+              <Mapping SourceColumn="ITName" DataSetColumn="ITName" />
+              <Mapping SourceColumn="process" DataSetColumn="process" />
+              <Mapping SourceColumn="shade" DataSetColumn="shade" />
+              <Mapping SourceColumn="Style" DataSetColumn="Style" />
+              <Mapping SourceColumn="Grpcs" DataSetColumn="Grpcs" />
+              <Mapping SourceColumn="GrMtr" DataSetColumn="GrMtr" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LotDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LotDataset" msprop:Generator_UserDSName="LotDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="INOUT" msprop:Generator_TableClassName="INOUTDataTable" msprop:Generator_TableVarName="tableINOUT" msprop:Generator_TablePropName="INOUT" msprop:Generator_RowDeletingName="INOUTRowDeleting" msprop:Generator_RowChangingName="INOUTRowChanging" msprop:Generator_RowEvHandlerName="INOUTRowChangeEventHandler" msprop:Generator_RowDeletedName="INOUTRowDeleted" msprop:Generator_UserTableName="INOUT" msprop:Generator_RowChangedName="INOUTRowChanged" msprop:Generator_RowEvArgName="INOUTRowChangeEvent" msprop:Generator_RowClassName="INOUTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LotNo" msprop:Generator_ColumnVarNameInTable="columnLotNo" msprop:Generator_ColumnPropNameInRow="LotNo" msprop:Generator_ColumnPropNameInTable="LotNoColumn" msprop:Generator_UserColumnName="LotNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IchNo" msprop:Generator_ColumnVarNameInTable="columnIchNo" msprop:Generator_ColumnPropNameInRow="IchNo" msprop:Generator_ColumnPropNameInTable="IchNoColumn" msprop:Generator_UserColumnName="IchNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACName" msprop:Generator_ColumnVarNameInTable="columnACName" msprop:Generator_ColumnPropNameInRow="ACName" msprop:Generator_ColumnPropNameInTable="ACNameColumn" msprop:Generator_UserColumnName="ACName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gpcs" msprop:Generator_ColumnVarNameInTable="columnGpcs" msprop:Generator_ColumnPropNameInRow="Gpcs" msprop:Generator_ColumnPropNameInTable="GpcsColumn" msprop:Generator_UserColumnName="Gpcs" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Gmtr" msprop:Generator_ColumnVarNameInTable="columnGmtr" msprop:Generator_ColumnPropNameInRow="Gmtr" msprop:Generator_ColumnPropNameInTable="GmtrColumn" msprop:Generator_UserColumnName="Gmtr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BillDt" msprop:Generator_ColumnVarNameInTable="columnBillDt" msprop:Generator_ColumnPropNameInRow="BillDt" msprop:Generator_ColumnPropNameInTable="BillDtColumn" msprop:Generator_UserColumnName="BillDt" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BillNo" msprop:Generator_ColumnVarNameInTable="columnBillNo" msprop:Generator_ColumnPropNameInRow="BillNo" msprop:Generator_ColumnPropNameInTable="BillNoColumn" msprop:Generator_UserColumnName="BillNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITName" msprop:Generator_ColumnVarNameInTable="columnITName" msprop:Generator_ColumnPropNameInRow="ITName" msprop:Generator_ColumnPropNameInTable="ITNameColumn" msprop:Generator_UserColumnName="ITName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="process" msprop:Generator_ColumnVarNameInTable="columnprocess" msprop:Generator_ColumnPropNameInRow="process" msprop:Generator_ColumnPropNameInTable="processColumn" msprop:Generator_UserColumnName="process" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shade" msprop:Generator_ColumnVarNameInTable="columnshade" msprop:Generator_ColumnPropNameInRow="shade" msprop:Generator_ColumnPropNameInTable="shadeColumn" msprop:Generator_UserColumnName="shade" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Style" msprop:Generator_ColumnVarNameInTable="columnStyle" msprop:Generator_ColumnPropNameInRow="Style" msprop:Generator_ColumnPropNameInTable="StyleColumn" msprop:Generator_UserColumnName="Style" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Grpcs" msprop:Generator_ColumnVarNameInTable="columnGrpcs" msprop:Generator_ColumnPropNameInRow="Grpcs" msprop:Generator_ColumnPropNameInTable="GrpcsColumn" msprop:Generator_UserColumnName="Grpcs" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GrMtr" msprop:Generator_ColumnVarNameInTable="columnGrMtr" msprop:Generator_ColumnPropNameInRow="GrMtr" msprop:Generator_ColumnPropNameInTable="GrMtrColumn" msprop:Generator_UserColumnName="GrMtr" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BalPCS" msprop:Generator_ColumnVarNameInTable="columnBalPCS" msprop:Generator_ColumnPropNameInRow="BalPCS" msprop:Generator_ColumnPropNameInTable="BalPCSColumn" msprop:Generator_UserColumnName="BalPCS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BalMtr" msprop:Generator_ColumnVarNameInTable="columnBalMtr" msprop:Generator_ColumnPropNameInRow="BalMtr" msprop:Generator_ColumnPropNameInTable="BalMtrColumn" msprop:Generator_UserColumnName="BalMtr" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
